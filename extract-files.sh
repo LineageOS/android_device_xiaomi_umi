@@ -8,6 +8,9 @@
 
 function blob_fixup() {
     case "${1}" in
+        vendor/etc/init/init.batterysecret.rc)
+            sed -i "/seclabel u:r:batterysecret:s0/d" "${2}"
+            ;;
         vendor/lib64/camera/components/com.mi.node.watermark.so)
             "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
