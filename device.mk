@@ -42,6 +42,9 @@ PRODUCT_PACKAGES += \
     xiaomi_umi_hwlevel_p01_overlay \
     xiaomi_umi_hwlevel_p1_overlay
 
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay/packages/services/DeviceAsWebcam
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.barometer.xml
