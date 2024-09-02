@@ -11,6 +11,9 @@ function blob_fixup() {
         vendor/etc/init/init.batterysecret.rc)
             sed -i "/seclabel u:r:batterysecret:s0/d" "${2}"
             ;;
+        vendor/lib/hw/audio.primary.umi.so)
+            sed -i "s|/vendor/lib/liba2dpoffload\.so|liba2dpoffload_umi\.so\x00\x00\x00\x00\x00\x00\x00\x00" "${2}"
+            ;;
         vendor/lib64/camera/components/com.mi.node.watermark.so)
             "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
