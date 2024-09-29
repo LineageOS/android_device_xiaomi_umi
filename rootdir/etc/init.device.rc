@@ -1,3 +1,10 @@
 # PowerShare
 on boot
     chown system system /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/wireless/reverse_chg_mode
+
+# UDFPS
+on property:ro.boot.hwlevel=P0.1
+    setprop persist.vendor.fingerprint.sensor_location 549|1925|99
+
+on property:ro.boot.hwlevel=P1
+    setprop persist.vendor.fingerprint.sensor_location 549|1925|99
