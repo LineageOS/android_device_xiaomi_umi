@@ -33,3 +33,7 @@ ro.hardware.audio.primary=umi
 # Display
 ro.surface_flinger.set_touch_timer_ms=200
 vendor.display.defer_fps_frame_count=2
+
+# Fingerprint
+persist.vendor.fingerprint.type=udfps_optical
+persist.vendor.fingerprint.udfps.control_illumination=true
