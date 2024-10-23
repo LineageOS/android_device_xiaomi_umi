@@ -1,2 +1,0 @@
-# PowerShare
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.powershare@1\.0-service\.xiaomi		u:object_r:hal_lineage_powershare_default_exec:s0
