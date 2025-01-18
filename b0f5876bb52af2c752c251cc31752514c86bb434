@@ -16,6 +16,24 @@
       "message": "https://review.lineageos.org/c/LineageOS/android_device_xiaomi_umi/+/412642/4/sepolicy/vendor/init.te is needed",
       "revId": "b0f5876bb52af2c752c251cc31752514c86bb434",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b72b7534_1a1845cc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-01-18T16:39:33Z",
+      "side": 1,
+      "message": "It\u0027s in common",
+      "parentUuid": "e2f747b0_fe763555",
+      "revId": "b0f5876bb52af2c752c251cc31752514c86bb434",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
