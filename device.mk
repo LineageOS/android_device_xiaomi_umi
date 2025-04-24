@@ -46,7 +46,7 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 
 # PowerShare
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.default
+    vendor.lineage.powershare-service.default
 
 # Rootdir
 PRODUCT_PACKAGES += \
