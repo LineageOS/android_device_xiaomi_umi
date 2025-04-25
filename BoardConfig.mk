@@ -22,9 +22,6 @@ TARGET_KERNEL_CONFIG += vendor/xiaomi/umi.config
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := umi
 
-# PowerShare
-TARGET_POWERSHARE_PATH := /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/wireless/reverse_chg_mode
-
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
