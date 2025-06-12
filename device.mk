@@ -36,9 +36,13 @@ PRODUCT_COPY_FILES += \
 $(call soong_config_set,xiaomi_kona,variant_lib,//$(LOCAL_PATH):libvariant_xiaomi_umi)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+PRODUCT_PACKAGES += \
+    ApertureOverlayDevice \
+    FrameworkResOverlayDevice \
+    LineageSettingsOverlayDevice \
+    LineageSDKOverlayDevice \
+    LineageSystemUIOverlayDevice \
+    SystemUIOverlayDevice
 
 # Permissions
 PRODUCT_COPY_FILES += \
