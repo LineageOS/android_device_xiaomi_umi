@@ -22,7 +22,13 @@ static const variant_info_t umi_info = {
     .nfc = true,
 };
 
-void vendor_load_properties() {
+void vendor_process_bootenv() {
     set_variant_props(umi_info);
+}
+
+void vendor_load_properties() {
+#if __ANDROID_API__ < 36
+    vendor_process_bootenv();
+#endif
     set_dalvik_heap();
 }
