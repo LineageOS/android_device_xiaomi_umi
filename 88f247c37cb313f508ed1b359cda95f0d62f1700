@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8012a762_c0e0cb3b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-08-13T05:21:45Z",
+      "side": 1,
+      "message": "NFC functionality has already been broke, nothing else is more important than fixing that",
+      "revId": "88f247c37cb313f508ed1b359cda95f0d62f1700",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
