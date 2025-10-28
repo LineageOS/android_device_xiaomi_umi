@@ -1,15 +1,12 @@
 /*
- * Copyright (C) 2021 The LineageOS Project
+ * Copyright (C) 2021-2025 The LineageOS Project
  *
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include <libinit_dalvik_heap.h>
-#include <libinit_variant.h>
+#include <libvariant.h>
 
-#include "vendor_init.h"
-
-static const variant_info_t umi_info = {
+static const variant_info umi_info = {
     .hwc_value = "",
     .sku_value = "",
 
@@ -22,7 +19,6 @@ static const variant_info_t umi_info = {
     .nfc = true,
 };
 
-void vendor_load_properties() {
-    set_variant_props(umi_info);
-    set_dalvik_heap();
-}
+const std::vector<variant_info> variants = {
+    umi_info,
+};
